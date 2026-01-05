@@ -1,0 +1,40 @@
+.slider-container {
+    width: 100%;
+
+    margin-top: auto;
+}
+
+.swiper {
+    width: 100%;
+    height: 100px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+.slide-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+}
+
+.slide-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

@@ -1,0 +1,80 @@
+.ethic-police {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 2rem 4rem;
+    border-radius: 43px;
+    box-shadow: 13px 15px 24.5px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.ethic-police__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+.btn {
+    background: linear-gradient(204.67deg, #FF9B06 -24.31%, #FFFFFF 120.9%);
+    padding: 0.7rem 1.4rem;
+    border-radius: 43px;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 43px;
+    background: linear-gradient(204.67deg, #FF9B06 13.31%, #FFFFFF 120.9%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    opacity: 1;
+}
+
+.btn img {
+    transition: all 0.3s;
+}
+
+.btn:hover img {
+    transform: rotate(180deg) scale(1.5);
+}
+
+h2 {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 41px;
+    letter-spacing: -4%;
+
+}
+
+h3 {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 28px;
+
+    margin-bottom: 1rem;
+}
+
+p {
+    font-family: Inter;
+    font-weight: 300;
+    font-style: Light;
+    font-size: 22px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
