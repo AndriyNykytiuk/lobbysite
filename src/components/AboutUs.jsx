@@ -17,7 +17,7 @@ const AboutUs = () => {
                     <h3>члени організації</h3>
                     <p>Наша організація має більше 300
                         висококваліфікованих спеціалістів.</p>
-                    <a href="#"><img src={arrow} alt="arrow" /></a>
+                    <Link to="/about/membership"><img src={arrow} alt="arrow" /></Link>
                 </div>
             </div>
             <div className="about-us-bottom">
@@ -25,7 +25,8 @@ const AboutUs = () => {
                     <h3>члени правління</h3>
                     <p>Наша організація має більше 300
                         висококваліфікованих спеціалістів.</p>
-                    <a href="#"><img src={arrow} alt="arrow" /></a>
+                    <Link to="/about/membership" className='police-btn'>
+                        <img src={arrow} alt="arrow" /></Link>
                 </div>
                 <div className="police">
                     <h3>Кодекс етики</h3>

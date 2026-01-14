@@ -17,7 +17,7 @@ const Main = () => {
                     <Route path="/about" element={<AboutUs />} />
                     <Route path="/about/who-we-are" element={<WhoWeAre />} />
                     <Route path="/about/ethic-police" element={<EthicPolice />} />
-                    <Route path="about/membership" element={<Membership />} />
+                    <Route path="/about/membership" element={<Membership />} />
                 </Routes>
                 <Slider />
             </div>
