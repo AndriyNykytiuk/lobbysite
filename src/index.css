@@ -36,10 +36,6 @@ select {
 :root {
   --font-inter: 'Inter', sans-serif;
   --font-montserrat: 'Montserrat', sans-serif;
-  /*background: linear-gradient(90deg, #FFD686 0%, #FFFFFF 48%, #A8D9FF 100%);*/
-  background-image: url('./pict/back.svg');
-  background-size: cover;
-  background-position: center;
   font-family: var(--font-inter);
   line-height: 1.5;
   font-weight: 400;
@@ -68,6 +64,11 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  background-image: url('./pict/back.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 h1 {

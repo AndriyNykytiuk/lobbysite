@@ -14,9 +14,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
+.header__logo{
+    position: relative;
+    z-index: 100;   
+}
 .header__nav ul {
     list-style: none;
     display: flex;
@@ -103,6 +108,7 @@
 .header__about-us__dropdown {
     display: none;
     position: absolute;
+    z-index: 100;
     top: 150%;
     left: 0;
     width: 15rem;
@@ -170,7 +176,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     .header__container {
         flex-direction: row;
         gap: 1.5rem;

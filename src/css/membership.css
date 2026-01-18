@@ -6,9 +6,16 @@
     gap: 2rem;
     padding: 2rem 1rem;
 }
+.boss{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
 
 .item__card {
     flex: 1 1 auto;
+    max-width: 450px;
+    width: 100%;
     position: relative;
     border-radius: 0.5rem;
     overflow: hidden;
@@ -61,9 +68,8 @@
     height: 100%;
     max-height: 250px;
     width: 100%;
-    background-color: rgba(246, 244, 236, 1);
-
-    color: black;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
     text-align: center;
     transform: translateY(73%);
     border-radius: 0.5rem;
@@ -71,9 +77,10 @@
 }
 
 .item__card:hover {
-    transform: scale(1.1);
+    transform: scale(1.06);
     z-index: 100;
     transition: all 0.3s ease-in-out;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .item__card:hover .pict {
@@ -84,6 +91,6 @@
 
 .item__card:hover .item__card-content {
     transform: translateY(0);
-     background-color: rgba(246, 244, 236, 0.4);
+     background-color: rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease-in-out;
 }

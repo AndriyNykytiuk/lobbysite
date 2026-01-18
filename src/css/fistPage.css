@@ -1,7 +1,18 @@
+.first__page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+    margin-bottom: 6rem;
+}
+
 .first__page__title {
     display: flex;
     justify-content: start;
     align-items: center;
+
     gap: 1rem;
     margin-bottom: 6rem;
 
@@ -21,27 +32,45 @@
 
 .slim-word {
     font-family: Montserrat;
+    font-size: 3rem;
     font-weight: 300;
     font-style: normal;
 }
 
 .main__button {
     align-items: center;
+    display: flex;
 
 }
+
 
 .main__button a {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-style: italic;
-    font-size: 26px;
+    font-size: clamp(18px, 2vw + 1rem, 26px);
     color: black;
     border: 1px solid #a8d9ff;
     border-radius: 1rem;
     padding: 1rem 2rem;
-    background: linear-gradient(90deg, #77BEF0 1.58%, rgba(246, 244, 236, 0.5) 48.41%, #FF9B06 100.01%);
-    box-shadow: 4px 7px 16px 0px rgba(0, 0, 0, 0.27);
 
+    background: linear-gradient(90deg,
+            #77BEF0 0.8%,
+            rgba(246, 244, 236, 0.5) 24.2%,
+            #FF9B06 50%,
+            rgba(246, 244, 236, 0.5) 75.8%,
+            #77BEF0 99.2%);
+    background-size: 200% 100%;
+    background-position: 0% 50%;
+    box-shadow: 4px 7px 16px 0px rgba(0, 0, 0, 0.27);
+    transition: background-position 0.6s ease, box-shadow 0.3s ease, transform 0.3s ease;
+
+}
+
+.main__button a:hover {
+    background-position: 100% 50%;
+    box-shadow: 6px 9px 20px 0px rgba(0, 0, 0, 0.35);
+    transform: translateY(-2px);
 }
 
 .main__block {
@@ -167,7 +196,11 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
+    .first__page {
+        padding: 0 1rem;
+    }
+
     .first__page__title {
         flex-direction: column;
         justify-content: center;
@@ -180,13 +213,14 @@
         text-align: center;
         padding: 0 1rem;
         max-width: 100%;
-       font-size: 16px;
-       margin-bottom: 1rem;
+        font-size: 16px;
+        margin-bottom: 1rem;
     }
 
     .main__button a {
         font-size: 18px;
-    }   
+    }
+
     .block__top {
         flex-direction: column;
     }

@@ -20,6 +20,7 @@ const Header = () => {
                 </div>
 
                 <div className={`header__burger ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
+    
                     <span></span>
                     <span></span>
                     <span></span>
@@ -35,7 +36,7 @@ const Header = () => {
                                     <li><Link to="/about/who-we-are" className="header__about-us__dropdown__item" onClick={() => setIsOpen(false)}>Хто ми?</Link></li>
                                     <li><Link to="/about/membership" className="header__about-us__dropdown__item" onClick={() => setIsOpen(false)}>Члени правління</Link></li>
                                     <li><a className="header__about-us__dropdown__item" href="#" onClick={() => setIsOpen(false)}>Члени організації</a></li>
-                                    <li><a className="header__about-us__dropdown__item" href="#" onClick={() => setIsOpen(false)}>Кодекс етики</a></li>
+                                    <li><Link to="/about/ethic-police" className="header__about-us__dropdown__item" onClick={() => setIsOpen(false)}>Кодекс етики</Link></li>
                                 </ul>
                             </div>
                         </li>
