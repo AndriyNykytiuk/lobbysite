@@ -1,15 +1,35 @@
 .membership-content {
     display: flex;
-    flex-wrap: wrap;
+  
     justify-content: center;
     align-items: center;
     gap: 2rem;
     padding: 2rem 1rem;
 }
-.boss{
+.title__membership{
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+    line-height: 41px;
+    letter-spacing: -4%;
+    margin-bottom: 3rem;
+}
+.title__membership span{
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-style: italic ;
+    font-size: 64px;
+    line-height: 41px;
+    letter-spacing: -4%;
+    margin-bottom: 3rem;
+}
+.upper{
     display:flex;
     align-items:center;
     justify-content: center;
+    gap:2rem;
+     padding: 2rem 1rem;
 }
 
 .item__card {
@@ -24,9 +44,18 @@
 
 .item__card__container {
     position: relative;
-    padding-bottom: 135%;
+    padding-bottom: 124%;
+    overflow: hidden;
+
+    width: 100%;
+
+}
+.item__card__container-yurii {
+    position: relative;
+    padding-bottom: 124%;
     overflow: hidden;
     height: 0;
+    width: 100%;
     max-width: 100%;
 }
 
@@ -35,10 +64,19 @@
     top: 0;
     left: 0;
     width: 100%;
+ 
     object-fit: cover;
     transition: all 0.3s ease-in-out;
 }
-
+.pict-yurii{
+        position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
 .item__text {
     display: flex;
     flex-direction: column;
@@ -62,11 +100,12 @@
 }
 
 .item__card-content {
+    
     position: absolute;
     bottom: 0%;
     left: 0;
     height: 100%;
-    max-height: 250px;
+    max-height: 270px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
@@ -85,7 +124,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 .item__card:hover .pict {
     transform: scale(1.1);
-    
+
     transition: all 0.3s ease-in-out;
 }
 

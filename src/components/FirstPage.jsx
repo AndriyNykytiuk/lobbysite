@@ -1,6 +1,6 @@
 import React from 'react'
 import '../css/fistPage.css'
-import team from '../pict/team.png'
+import team from '../pict/lobbyTeam.jpg'
 const FirstPage = () => {
   return (
     <div className='first__page'>

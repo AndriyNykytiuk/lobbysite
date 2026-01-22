@@ -140,12 +140,18 @@
     transition: all 0.3s;
 }
 
+.who-we-are a,
+.participants a,
+.ceo a,
 .police a {
     position: relative;
     z-index: 1;
     overflow: hidden;
 }
 
+.who-we-are a::before,
+.participants a::before,
+.ceo a::before,
 .police a::before {
     content: "";
     position: absolute;
@@ -160,6 +166,9 @@
     z-index: -1;
 }
 
+.who-we-are a:hover::before,
+.participants a:hover::before,
+.ceo a:hover::before,
 .police a:hover::before {
     opacity: 1;
 }

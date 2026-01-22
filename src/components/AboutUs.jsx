@@ -11,13 +11,13 @@ const AboutUs = () => {
                     <h3>хто ми ?</h3>
                     <p>Наша основна місія, основні напрямки,
                         мета до якої ми прагнемо.</p>
-                    <Link to='/about/who-we-are'><img src={arrow} alt="arrow" /></Link>
+                    <Link to='/about/who-we-are' className='police-btn'><img  src={arrow} alt="arrow" /></Link>
                 </div>
                 <div className="participants">
                     <h3>члени організації</h3>
                     <p>Наша організація має більше 300
                         висококваліфікованих спеціалістів.</p>
-                    <Link to="/about/membership"><img src={arrow} alt="arrow" /></Link>
+                    <Link to="/about/membership" className='police-btn'><img src={arrow} alt="arrow" /></Link>
                 </div>
             </div>
             <div className="about-us-bottom">
@@ -25,7 +25,8 @@ const AboutUs = () => {
                     <h3>члени правління</h3>
                     <p>Наша організація має більше 300
                         висококваліфікованих спеціалістів.</p>
-                    <Link to="/about/membership" className='police-btn'>
+                    <Link to="/about/membership" 
+                    className='police-btn'>
                         <img src={arrow} alt="arrow" /></Link>
                 </div>
                 <div className="police">

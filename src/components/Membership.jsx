@@ -4,15 +4,16 @@ import Anna from '../pict/lobbyPict/AnnaLachehina.webp'
 import Yurii from '../pict/lobbyPict/YriiRylav.webp'
 import Malich from '../pict/lobbyPict/YuliaMalich.webp'
 import Taras from '../pict/lobbyPict/TarasShevchenko.webp'
+import Inna from "../pict/Inna.webp"
 import '../css/membership.css'
 const Membership = () => {
     return (
         <div>
             <div className='membership-wrapper'>
-                <h2>
-                    Члени <strong>правління</strong>
+                <h2 className='title__membership'>
+                    Члени <span>правління</span>
                 </h2>
-                <div className='boss'>   
+                <div className='upper'>   
                     <div className="item__card">
                         <div className="item__card__container">
                             <div className="item__card-img">
@@ -29,9 +30,6 @@ const Membership = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className='membership-content'>
-
                     <div className="item__card">
                         <div className="item__card__container">
                             <div className="item__card-img">
@@ -49,22 +47,23 @@ const Membership = () => {
                             </div>
                         </div>
                     </div>
-
                     <div className="item__card">
                         <div className="item__card__container">
                             <div className="item__card-img">
-                                < img className="pict" src={Yurii} alt="" />
+                                < img className="pict" src={Inna} alt="" />
                             </div>
                             <div className="item__card-content">
                                 <div className="item__text">
-                                    <h3>Юрій Рилач</h3>
-                                    <p >Член правління Української асоціації лобіювання. 
-                                        Керівник відділу з корпоративних та регуляторних питань ВАТ Україна.
+                                    <h3>Інна Бойчук</h3>
+                                    <p >Членкиня правління Української асоціації лобіювання. Директорка зі стратегічних комунікацій та взаємодії зі стейкхолдерами міжнародної мережі магазинів Аврора. Співголова комітету з ритейлу та е-комерції Американської торговельної промислової палати в Україні. 
+
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className='membership-content'>
                     <div className="item__card">
                         <div className="item__card__container">
                             <div className="item__card-img">
@@ -100,9 +99,22 @@ const Membership = () => {
                             </div>
                         </div>
                     </div>
-
+                    <div className="item__card">
+                        <div className="item__card__container-yurii">
+                            <div className="item__card-img">
+                                <img className="pict-yurii" src={Yurii} alt="" />
+                            </div>
+                            <div className="item__card-content">
+                                <div className="item__text">
+                                    <h3>Юрій Рилач</h3>
+                                    <p>Член правління Української асоціації лобіювання. 
+                                        Керівник відділу з корпоративних та регуляторних питань ВАТ Україна.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </div>
     );

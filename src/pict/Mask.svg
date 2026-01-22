@@ -1,0 +1,21 @@
+<svg width="424" height="290" viewBox="0 0 424 290" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_543_615" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="424" height="290">
+<rect width="424" height="290" rx="43" fill="url(#paint0_linear_543_615)"/>
+</mask>
+<g mask="url(#mask0_543_615)">
+<g filter="url(#filter0_f_543_615)">
+<ellipse cx="177.018" cy="155.7" rx="177.018" ry="155.7" transform="matrix(-0.713885 0.700262 0.790132 0.612936 282.742 146)" fill="#FF9B06"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_543_615" x="-46.9702" y="58.9453" width="652.729" height="612.896" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_543_615"/>
+</filter>
+<linearGradient id="paint0_linear_543_615" x1="27.9019" y1="1.77703e-05" x2="421.376" y2="233.6" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F6F4EC"/>
+<stop offset="1" stop-color="#77BEF0"/>
+</linearGradient>
+</defs>
+</svg>
