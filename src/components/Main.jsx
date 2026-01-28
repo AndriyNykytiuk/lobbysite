@@ -7,6 +7,7 @@ import WhoWeAre from './WhoWeAre'
 import EthicPolice from './EthicPolice'
 import Membership from './Membership'
 import { Routes, Route } from 'react-router-dom'
+import OrganisationMembers from './OrganisationMembers'
 
 const Main = () => {
     return (
@@ -18,6 +19,7 @@ const Main = () => {
                     <Route path="/about/who-we-are" element={<WhoWeAre />} />
                     <Route path="/about/ethic-police" element={<EthicPolice />} />
                     <Route path="/about/membership" element={<Membership />} />
+                    <Route path="/about/Organisationmembers" element={<OrganisationMembers />} />
                 </Routes>
                 <Slider />
             </div>

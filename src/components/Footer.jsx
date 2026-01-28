@@ -4,6 +4,7 @@ import insta from '../pict/insta.svg'
 import linkedIn from '../pict/linkedIn.svg'
 import telegram from '../pict/telegram.svg'
 import facebook from '../pict/facebook.svg'
+
 import '../css/footer.css'
 
 

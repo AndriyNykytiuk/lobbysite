@@ -18,10 +18,11 @@
     gap: 2rem;
 }
 
-.header__logo{
+.header__logo {
     position: relative;
-    z-index: 100;   
+    z-index: 100;
 }
+
 .header__nav ul {
     list-style: none;
     display: flex;

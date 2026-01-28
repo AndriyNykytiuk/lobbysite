@@ -1,12 +1,11 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import '../css/slider.css';
 import nazk from '../pict/nazk.svg';
 import gric from '../pict/gric.svg';
 import alumni from '../pict/alumni.svg';
-
-import 'swiper/css';
-import '../css/slider.css';
 
 const slides = [
     { id: 1, image: nazk, alt: 'NAZK Logo', link: '#' },
