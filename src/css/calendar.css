@@ -1,0 +1,85 @@
+.calendar__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    border-radius: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.calendar__container {
+    display: flex;
+    gap: 16px;
+}
+
+.calendar__event-title {
+    font-weight: 800;
+}
+
+.calendar__events {
+    width: 100%;
+}
+
+.calendar__event-date {
+    font-size: 12px;
+    opacity: 0.65;
+}
+
+.calendar__btns {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.calendar__tab-btn {
+    width: 100%;
+    padding: 16px 24px;
+    font-weight: 600;
+    font-family: "Inter";
+    font-size: 26px;
+    background: none;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.calendar__tab-btn:not(:disabled) {
+    opacity: 1;
+}
+
+.calendar__tab-btn:hover:not(:disabled) {
+    opacity: 1;
+}
+
+.calendar__tab-btn:disabled {
+    opacity: 1;
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
+
+
+.calendar__empty-message {}
+
+.calendar__pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.calendar__page-btn {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background: transparent;
+}
+

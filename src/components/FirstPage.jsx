@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/fistPage.css'
 import Team from '../pict/lobbyTeam.jpg'
+import Calendar from '../components/Calendar.jsx'
 const FirstPage = () => {
     return (
         <div className='first__page'>
@@ -41,6 +42,7 @@ const FirstPage = () => {
                     <div className="block__bottom-right">
 
                     </div>
+               
                 </div>
             </div>
 

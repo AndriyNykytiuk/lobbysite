@@ -41,8 +41,9 @@ const Header = () => {
                             </div>
                         </li>
                         <li className="header__nav__membership"><a href="#" onClick={() => setIsOpen(false)}>Членство</a></li>
-                        <li className="header__nav__actual"><a href="#" onClick={() => setIsOpen(false)}>Актуальне</a></li>
+                        <li className="header__nav__actual"><Link to='Actual' onClick={() => setIsOpen(false)}>Актуальне</Link></li>
                         <li className="header__nav__resources"><a href="#" onClick={() => setIsOpen(false)}>Ресурси</a></li>
+                        <li className='header__nav__calendar'><Link to='Calendar' onClick={() => setIsOpen(false)}>Календар</Link></li>
                     </ul>
 
                     <div className="header__lang">
