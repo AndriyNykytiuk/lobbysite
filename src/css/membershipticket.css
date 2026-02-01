@@ -1,0 +1,55 @@
+.membership__ticket{
+    padding: 1rem 2rem;
+}
+.membership__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    max-height: 100vh;
+    height: 100%;
+}
+
+.membership__form input {
+    padding: 0.5rem;
+    border-radius: 43px;
+    max-width: 50rem;
+    width: 100%;
+    border: none;
+    margin-bottom: 1rem;
+}
+.membership__form__button {
+    padding: 0.5rem;
+    border-radius: 43px;
+    max-width: 20rem;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: clamp(18px, 2vw + 1rem, 26px);
+    color: black;
+    border: 1px solid #a8d9ff;
+    border-radius: 1rem;
+    background: linear-gradient(90deg,
+            #77BEF0 0.8%,
+            rgba(246, 244, 236, 0.5) 24.2%,
+            #FF9B06 50%,
+            rgba(246, 244, 236, 0.5) 75.8%,
+            #77BEF0 99.2%);
+    background-size: 200% 100%;
+    background-position: 0% 50%;
+    box-shadow: 4px 7px 16px 0px rgba(0, 0, 0, 0.27);
+    transition: background-position 0.6s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.membership__form__button:hover {
+    background-position: 100% 50%;
+    box-shadow: 4px 7px 16px 0px rgba(0, 0, 0, 0.27);
+    transform: translateY(-5px);
+}
+

@@ -8,7 +8,7 @@ const OrganisationMembers = () => {
     return (
         <div className='organisation__members'>
             {membershipsList.map((member) => (
-                <Memberitem key={member.name} name={member.name} position={member.position} role={member.role} description={member.description} />
+                <Memberitem key={member.name} img={member.img} name={member.name} position={member.position} role={member.role} description={member.description} />
             ))}
         </div>
     );

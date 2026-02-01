@@ -1,11 +1,11 @@
 import React from 'react'
 import Yrii from '../pict/lobbyPict/MaksDjygun.webp'
 import '../css/memberitem.css'
-const Memberitem = ({ name, position, role, description }) => {
+const Memberitem = ({ img, name, position, role, description }) => {
     return (
         <div className='memberitem'>
             <div className='memberitem__img-wrapper'>
-                <img className='memberitem__img' src={Yrii} alt="" />
+                <img className='memberitem__img' src={img} alt="" />
             </div>
             <div>
                 <h3 className='memberitem__name'>

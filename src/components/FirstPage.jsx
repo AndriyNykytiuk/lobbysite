@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/fistPage.css'
 import Team from '../pict/lobbyTeam.jpg'
+import {Link} from "react-router-dom"
 import Calendar from '../components/Calendar.jsx'
 const FirstPage = () => {
     return (
@@ -12,7 +13,7 @@ const FirstPage = () => {
                     <h1>обʼєднані  <br /> <span className='slim-word'>заради </span>змін</h1>
                 </div>
                 <div className='main__button'>
-                    <a href="#"> Подати заявку на членство </a>
+                    <Link to="/MembershipTicket"> Подати заявку на членство </Link>
                 </div>
             </div>
             <div className="main__block block">
