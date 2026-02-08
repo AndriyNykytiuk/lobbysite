@@ -4,6 +4,7 @@ import membershipsList from '../../membershipsList.json';
 import '../css/organistaionsmembers.css';
 
 
+
 const OrganisationMembers = () => {
     return (
         <div className='organisation__members'>

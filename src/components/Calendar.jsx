@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
+import Arrow from '../pict/arrow.svg'
 import Event from './Actual.jsx'
 import '../css/calendar.css'
 const API_URL =
@@ -153,9 +154,10 @@ function EventsCalendar() {
             </div>
           )}
         </div>
+        <button className='police-btn'><img src={Arrow} alt="" /> </button>
       </div>
 
-      <div className="calendar__pagination">
+      {/*<div className="calendar__pagination">
         {Array.from({ length: totalPages }).map((_, i) => {
           const n = i + 1;
           return (
@@ -169,7 +171,8 @@ function EventsCalendar() {
             </button>
           );
         })}
-      </div>
+      </div>*/}
+    
     </section>
   );
 }

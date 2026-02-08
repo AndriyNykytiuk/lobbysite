@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/fistPage.css'
-import Team from '../pict/lobbyTeam.jpg'
-import {Link} from "react-router-dom"
+import Team from '../pict/MasTteam.png'
+import { Link } from "react-router-dom"
 import Calendar from '../components/Calendar.jsx'
 const FirstPage = () => {
     return (
@@ -10,7 +10,7 @@ const FirstPage = () => {
             <div className='first__page__title' >
 
                 <div className="main__title">
-                    <h1>обʼєднані  <br /> <span className='slim-word'>заради </span>змін</h1>
+                    <h1>Обʼєднані  <br /> <span className='slim-word-1'>заради </span>змін</h1>
                 </div>
                 <div className='main__button'>
                     <Link to="/MembershipTicket"> Подати заявку на членство </Link>
@@ -24,30 +24,30 @@ const FirstPage = () => {
                         </h2>
                         <p>
                             громадська організація, що розвиває
-                            етичну культуру лобіювання
-                            та адвокації в Україні
+                            етичну культуру <span className='slim-word'>лобіювання </span>
+                            та <span className='slim-word'>адвокації</span> в Україні
                         </p>
                     </div>
                     <div className="block__top-right">
                         <p>
-                            Будуємо <span>найбільшу в Україні
-                                спільноту</span> професійних лобістів, відкриваючи доступ до знань,
+                            Будуємо <span className='slim-word-2'>найбільшу в Україні
+                                спільноту</span> професійних лобістів, <span className='slim-word-2'>відкриваючи доступ</span> до знань,
                             звʼязків та експертизи.
                         </p>
                     </div>
                 </div>
                 <div className="block__bottom">
                     <div className="block__bottom-left">
-                        <img src={Team} alt="Image" />
+                        <div className="block__bottom-left__img">
+                            <img src={Team} alt="Image" />
+                        </div>
+                        
                     </div>
                     <div className="block__bottom-right">
-
+                        <Calendar />
                     </div>
-               
                 </div>
             </div>
-
-
         </div>
     )
 }

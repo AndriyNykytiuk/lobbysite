@@ -1,6 +1,7 @@
 import React from 'react'
 import Yrii from '../pict/lobbyPict/MaksDjygun.webp'
 import '../css/memberitem.css'
+
 const Memberitem = ({ img, name, position, role, description }) => {
     return (
         <div className='memberitem'>

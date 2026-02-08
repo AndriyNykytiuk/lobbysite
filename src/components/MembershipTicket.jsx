@@ -10,7 +10,7 @@ const MembershipTicket = () => {
         <input type="text" placeholder='Ведіть прізвище' />
         <input type="text" placeholder='Ведіть номер телефону' />
         <input type="email" placeholder='Ведіть пошту' />
-        <button className='membership__form__button' type="submit">Долучитися до клубу "Good Politics"</button>
+        <button className='membership__form__button' type="submit">Долучитися до клубу <br /> <strong>Української Асоціації Лобіювання</strong></button>
       </form>
     </div>
   );

@@ -4,24 +4,33 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding: 0 1rem;
-  
+    padding: 0.5rem ;
+
 }
 
 .first__page__title {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
-
     gap: 1rem;
-    margin-bottom: 6rem;
-
+    width: 100%;
+    max-width: 1060px;
+    margin-bottom: 2rem;
 }
 
+.main__title {}
+
 .main__title {
+
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 22px;
     max-width: 572px;
     max-height: 140px;
     width: 100%;
@@ -33,13 +42,21 @@
 .slim-word {
     font-family: Montserrat;
     font-style: italic;
-    font-size: 0.9em;
+    font-size: 26px;
     font-weight: 300;
+}
+
+.slim-word-1 {
+    font-family: Montserrat;
+    font-style: italic;
+    font-size: 4rem;
+    font-weight: 200;
 }
 
 .main__button {
     align-items: center;
     display: flex;
+    flex: 20%;
 
 }
 
@@ -48,7 +65,10 @@
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-style: italic;
-    font-size: clamp(18px, 2vw + 1rem, 26px);
+    text-align: center;
+    max-width: 360px;
+    width: 100%;
+    font-size: clamp(18px, 2vw + 1rem, 16px);
     color: black;
     border: 1px solid #a8d9ff;
     border-radius: 1rem;
@@ -77,7 +97,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    width: 100%;
     gap: 1rem;
 
 }
@@ -90,7 +110,7 @@
 }
 
 .block__top-left {
-    max-width: 450px;
+    max-width: 518px;
     width: 100%;
     background: rgba(255, 255, 255, 1);
     box-shadow: 4px 7px 16px 0px rgba(0, 0, 0, 0.27);
@@ -115,12 +135,14 @@
     font-family: "Inter", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 20px;
+    font-size: 26px;
     line-height: 30px;
     letter-spacing: -0.03em;
 }
 
 .block__top-right {
+    display: flex;
+    align-items: center;
     max-width: 816px;
     width: 100%;
     background: linear-gradient(320deg, #F6F4EC -8.71%, #77BEF0 36.15%, #3B5E77 102.67%);
@@ -131,25 +153,26 @@
 
 .block__top-right p {
     max-width: 525px;
+    margin-bottom: 0px;
     width: 100%;
     color: rgba(246, 244, 236, 1);
     font-family: "Inter", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 38px;
+    line-height: 46px;
     letter-spacing: -0.03em;
 
 
 }
 
-.block__top-right span {
+.slim-word-2 {
     font-family: "Inter", sans-serif;
-    font-weight: 500;
-    font-style: normal;
+    font-weight: 200;
+    font-style: italic;
     font-size: 38px;
     line-height: 46px;
-    letter-spacing: -0.03em;
+
 }
 
 .block__bottom {
@@ -160,29 +183,32 @@
 }
 
 .block__bottom-left {
-    position: relative;
-
-    max-width: 850px;
-
-    box-shadow: 4px 7px 16px 0px rgba(0, 0, 0, 0.27);
-    border-radius: 43px;
+    max-width: 786px;
+    width: 100%;
 }
 
-.block__bottom-left img {
-    /*  position: absolute;
+.block__bottom-left__img {
+    position: relative;
+    padding-bottom: 48.1%;
+    overflow: auto;
+    border-radius: 43px;
+    box-shadow: 4px 7px 16px 0px rgba(0, 0, 0, 0.27);
+}
+
+.block__bottom-left__img img {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-   */
-    aspect-ratio: 12/8;
     object-fit: cover;
     border-radius: 43px;
 }
 
 .block__bottom-right {
     width: 100%;
-    min-width: 450px;
+    max-width: 450px;
+    max-height: 378px;
     background:
         linear-gradient(320deg, rgba(246, 244, 236, 0) 0%, rgba(119, 190, 240, 0.7) 90%),
         url('../pict/Mask.svg');
@@ -226,6 +252,10 @@
         margin-bottom: 1rem;
     }
 
+    .main__title h1 {
+        font-size: 42px;
+    }
+
     .main__button a {
         font-size: 18px;
     }
@@ -237,6 +267,7 @@
     .block__top-left,
     .block__top-right {
         max-width: 100%;
+        width: 100%;
     }
 
     .block__bottom {
@@ -247,6 +278,7 @@
     .block__bottom-right {
         max-width: 100%;
         width: 100%;
+
     }
 
     .block__bottom-right {
@@ -256,14 +288,22 @@
 
     .block__top-left h2,
     .block__top-right span {
-        font-size: 28px;
-        line-height: 1.2;
+        font-size: 22px;
+        margin-bottom: 0.3rem;
     }
 
     .block__top-right p,
     .block__top-left p {
-        font-size: 16px;
-        line-height: 1.5;
+        font-size: 22px;
         max-width: 100%;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .slim-word-1 {
+        font-family: Montserrat;
+        font-style: italic;
+        font-size: 2rem;
+        font-weight: 200;
     }
 }
