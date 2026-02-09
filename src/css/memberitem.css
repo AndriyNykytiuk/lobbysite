@@ -22,9 +22,229 @@
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
+    transition: all 0.3s ease-in-out;
 }
 
 .memberitem__description,
 .memberitem__role {
     display: none;
+}
+
+.memberitem__name {
+    position: relative;
+    text-align: center;
+}
+
+.memberitem:hover {
+    cursor: pointer;
+}
+
+.memberitem:hover .memberitem__img-wrapper img {
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.memberitem__position {
+    text-align: center;
+}
+
+.memberitem:hover .memberitem__name {
+    color: #FF9900;
+    transition: all 0.3s ease-in-out;
+}
+
+.memberitem__name::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.3s ease-in-out;
+}
+
+.memberitem:hover .memberitem__name::before {
+    width: 100%;
+}
+
+.modalblock {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalblock__content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    background-color: rgb(246, 244, 236);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+.modalblock__img {
+    position: relative;
+    align-self: center;
+    max-width: 300px;
+    max-height: 300px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-bottom: 33%;
+}
+
+.modalblock__img img {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modalblock__text {
+    flex: 1;
+    /* Ensure text takes available space */
+}
+
+.modalblock__text h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: "Inter";
+    font-style: italic;
+    margin-bottom: 1rem;
+    margin-left: 0;
+}
+
+.modalblock__text p {
+    font-size: 1rem;
+    padding: 0rem 1rem;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #333;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.modalblock__social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0rem 1rem;
+}
+
+.modalblock__social-links img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.modalblock__social-links a {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.modalblock__social-links a:hover {
+    transform: scale(1.2);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    line-height: 1;
+    transform: rotate(45deg);
+    color: #333;
+}
+
+.close-btn:hover {
+    color: #ff9900;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .memberitem {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .memberitem__img-wrapper {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+    .memberitem__name {
+        text-align: center;
+        margin-left: 0px;
+    }
+    .modalblock__content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: auto;
+        max-height: 95vh;
+        padding: 2rem 1rem;
+        overflow-y: auto;
+    }
+
+    .modalblock__img {
+        margin-top: 2%;
+        max-height: 150px;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 100%;
+        border-radius: 40px;
+        overflow: hidden;
+    }
+
+    .modalblock__text {
+        padding: 0rem 1rem;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .modalblock__text h3 {
+        font-size: 1.5rem;
+    }
+
+    .modalblock__social-links {
+        padding: 0rem 1rem;
+    }
+
+    .close-btn {
+        top: 5px;
+        right: 10px;
+    }
 }
