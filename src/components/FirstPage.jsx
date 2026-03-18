@@ -20,7 +20,7 @@ const FirstPage = () => {
                 <div className="block__top">
                     <div className="block__top-left">
                         <h2>
-                            Українська Асоціація Лобіювання --
+                            Українська асоціація лобіювання  – 
                         </h2>
                         <p>
                             громадська організація, що розвиває
@@ -32,7 +32,7 @@ const FirstPage = () => {
                         <p>
                             Будуємо <span className='slim-word-2'>найбільшу в Україні
                                 спільноту</span> професійних лобістів, <span className='slim-word-2'>відкриваючи доступ</span> до знань,
-                            звʼязків та експертизи.
+                            <br/>звʼязків та експертизи.
                         </p>
                     </div>
                 </div>
@@ -44,7 +44,21 @@ const FirstPage = () => {
                         
                     </div>
                     <div className="block__bottom-right">
-                        <Calendar />
+                        <div className="main__title-calendar">
+                             <h1> Календар <span className='slim-word-6'>подій </span> </h1>
+                        </div>
+                        <div className='main__button-calendar-container'>
+                            <div className='main__button-calendar'>
+                                <a className='future-schedule'>
+                                    Майбутні події
+                                </a>
+                            </div>
+                            <div className='main__button-calendar'>
+                                <a className='past-schedule'>
+                                    Минулі події
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

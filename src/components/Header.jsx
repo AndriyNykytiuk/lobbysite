@@ -2,13 +2,18 @@ import React, { useState } from 'react'
 import logo from '../pict/Logo.svg'
 import '../css/header.css'
 import { Link } from 'react-router-dom'
+import LoginForm from './LoginForm'
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
+    const [isAdminLoggedIn, setIsAdminLoggedIn] = useState(!!localStorage.getItem('token'));
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+
+
 
     return (
         <header>
@@ -64,9 +69,28 @@ const Header = () => {
                         <button type="submit" className="button">UA</button>
                         <span>/</span>
                         <button type="submit" className="button">EN</button>
+                        <button 
+                            className="button admin-btn" 
+                            onClick={() => {
+                                if (isAdminLoggedIn) {
+                                    window.location.href = '/adminComponent'
+                                } else {
+                                    setIsLoginModalOpen(true)
+                                }
+                            }}
+                        >
+
+                        </button>
                     </div>
                 </div>
             </div>
+            {isLoginModalOpen && <LoginForm onClose={() => {
+                setIsLoginModalOpen(false)
+                const isLoggedIn = !!localStorage.getItem('token')
+                if (isLoggedIn) {
+                    setIsAdminLoggedIn(true)
+                }
+            }} />}
         </header>
     )
 }

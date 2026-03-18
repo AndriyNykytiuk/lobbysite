@@ -8,32 +8,32 @@ const AboutUs = () => {
 
             <div className="about-us-top">
                 <div className="who-we-are">
-                    <h3>хто ми ?</h3>
+                    <h3>Хто ми ?</h3>
                     <p>Наша основна місія, основні напрямки,
                         мета до якої ми прагнемо.</p>
-                    <Link to='/about/who-we-are' className='police-btn'><img src={arrow} alt="arrow" /></Link>
+                    <Link to='/about/who-we-are' className='police-btn-1'><img src={arrow} alt="arrow" /></Link>
                 </div>
                 <div className="participants">
-                    <h3>члени організації</h3>
+                    <h3>Члени організації</h3>
                     <p>Наша організація має більше 300
                         висококваліфікованих спеціалістів.</p>
-                    <Link to="/about/Organisationmembers" className='police-btn'><img src={arrow} alt="arrow" /></Link>
+                    <Link to="/about/Organisationmembers" className='police-btn-1'><img src={arrow} alt="arrow" /></Link>
                 </div>
             </div>
             <div className="about-us-bottom">
                 <div className="ceo">
-                    <h3>члени правління</h3>
+                    <h3>Члени правління</h3>
                     <p>Наша організація має більше 300
                         висококваліфікованих спеціалістів.</p>
                     <Link to="/about/membership"
-                        className='police-btn'>
+                        className='police-btn-1'>
                         <img src={arrow} alt="arrow" /></Link>
                 </div>
                 <div className="police">
                     <h3>Кодекс етики</h3>
                     <p>Наша організація має більше 300
                         висококваліфікованих спеціалістів.</p>
-                    <Link to="/about/ethic-police" className='police-btn'><img src={arrow} alt="arrow" /></Link>
+                    <Link to="/about/ethic-police" className='police-btn-1'><img src={arrow} alt="arrow" /></Link>
                 </div>
             </div>
 

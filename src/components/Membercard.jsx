@@ -17,12 +17,12 @@ const Membercard = ({ img, name, title, article1, article2, position, role, desc
 
     return (
         <div className="item__card-member">
-            <div className="item__card-container">
+            <div className="item__card-container" onClick={clickText}>
                 <div  className="item__card-img">
                     <img className="item-pict" src={img} alt="" />
                    
                 </div>
-                 <img className="item-info" onClick={clickText} src={info} alt="" />
+                 <img className="item-info" src={info} alt="" />
                 <div className='item__name-container'>
                      <h4 className='item__name'>{name}</h4>
                 </div>
