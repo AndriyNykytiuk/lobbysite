@@ -1,76 +1,24 @@
-.calendar__link {
+.calendar__container{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 18px;
-    border-radius: 18px;
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    text-decoration: none;
-    color: inherit;
-
-}
-
-.calendar__container {
-    position: relative;
-    width: 100%;
-    display: flex;
     gap: 16px;
+    font-family: "Inter";
 }
-.police-btn {
-    position: absolute;
-    top: 75%;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 3.5rem;
-    max-height: 2rem;
-    width: 100%;
-    padding: 0.5rem;
-    height: 100%;
-    border-radius: 18px;
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    background-color: rgb(246, 244, 236);
-    cursor: pointer;
-}
-.police-btn img {
-    transition: all 0.3s;
-
-}
-
-.police-btn:hover img {
-    transform: scale(1.2);
-    transition: all 0.3s;
-}
-
-.calendar__event-title {
-    font-weight: 800;
-}
-
-.calendar__events {
-    width: 100%;
-}
-
-.calendar__event-date {
-    font-size: 12px;
-    opacity: 0.65;
-}
-
-.calendar__btns {
-    width: 40%;
+.calendar__btns{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex:30%;
     gap: 16px;
 }
-
-.calendar__tab-btn {
-    width: 100%;
+.calendar__tab-btn{
     padding: 16px 24px;
     font-weight: 600;
     font-family: "Inter";
-    font-size: 26px;
+    font-size: 32px;
     background: none;
     border: none;
     border-radius: 12px;
@@ -78,164 +26,60 @@
     transition: all 0.3s ease;
 }
 
-.calendar__tab-btn:not(:disabled) {
-    opacity: 1;
-}
-
-.calendar__tab-btn:hover:not(:disabled) {
-    opacity: 1;
-}
-
-.calendar__tab-btn:disabled {
-    opacity: 1;
-    text-decoration: underline;
-    transform: translateY(-2px);
-}
-
-
-
-.calendar__empty-message {}
-
-.calendar__pagination {
+.calendar__events{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 8px;
-    margin-top: 16px;
+    align-items: center;
+    flex:70%;
+    gap: 16px;
 }
-
-.calendar__page-btn {
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    background: transparent;
+.calendar__event{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    border-radius: 43px;
+    border: 1.5px solid #ffff;
+    padding: 16px;
+    width: 100%;
+    max-width: 792px;
+    max-height: 171px;
+    height: 100%;
+}
+.calendar__tab-btn.active{
+   font-weight: 900;
+   text-decoration: underline;
+  
+}
+.calendar__event-title{
+    font-weight: 800;
+    font-family: "Inter";
+    font-size: 32px;
+}
+.calendar__event-date span{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "Inter";
+    
+}
+.police-btn{
+    background: #F6F4EC;
+   width:87px;
+   height: 61px;
+    border-radius: 43px;
     cursor: pointer;
-    transition: all 0.2s ease;
+    border: none;
+    transition: all 0.3s ease;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.police-btn img{
+    width: 30%;
+    height: 20%;
+    object-fit: cover;
 }
 
-.calendar__page-btn:hover {
-    background: rgba(0, 0, 0, 0.05);
-    border-color: rgba(0, 0, 0, 0.4);
-}
-
-.calendar__page-btn.active {
-    background: rgba(0, 0, 0, 0.1);
-    border-color: rgba(0, 0, 0, 0.5);
-}
-
-/* ============================================
-   RESPONSIVE BREAKPOINTS
-   ============================================ */
-
-/* Tablet (1024px and below) */
-@media (max-width: 1024px) {
-    .calendar__tab-btn {
-        font-size: clamp(20px, calc(18px + 1.5vw), 24px);
-        padding: 14px 20px;
-    }
-
-    .calendar__btns {
-        width: 45%;
-    }
-
-    .calendar__link {
-        padding: 16px;
-    }
-
-    .calendar__event-title {
-        font-size: clamp(16px, calc(14px + 1vw), 18px);
-    }
-
-    .calendar__event-date {
-        font-size: clamp(11px, calc(10px + 0.5vw), 12px);
-    }
-}
-
-/* Mobile (768px and below) */
-@media (max-width: 768px) {
-    .calendar__container {
-        flex-direction: column;
-        gap: 24px;
-    }
-    .calendar__title{
-        font-size: clamp(20px, calc(18px + 1.5vw), 24px);
-    }
-    .calendar__btns {
-        width: 100%;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .calendar__tab-btn {
-        font-size: clamp(18px, calc(16px + 1vw), 22px);
-        padding: 12px 16px;
-        flex: 1;
-        max-width: 200px;
-    }
-
-    .calendar__link {
-        padding: 14px;
-        border-radius: 14px;
-    }
-
-    .calendar__event-title {
-        font-size: clamp(15px, calc(14px + 0.5vw), 17px);
-    }
-
-    .calendar__event-date {
-        font-size: 11px;
-    }
-
-    .calendar__pagination {
-        margin-top: 20px;
-    }
-
-    .calendar__page-btn {
-        width: 32px;
-        height: 32px;
-    }
-}
-
-/* Small Mobile (480px and below) */
-@media (max-width: 480px) {
-    .calendar__container {
-        gap: 20px;
-    }
-
-    .calendar__btns {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .calendar__tab-btn {
-        font-size: clamp(16px, calc(14px + 1vw), 20px);
-        padding: 10px 14px;
-        max-width: 100%;
-    }
-
-    .calendar__link {
-        padding: 12px;
-        border-radius: 12px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-    }
-
-    .calendar__event-title {
-        font-size: 14px;
-    }
-
-    .calendar__event-date {
-        font-size: 10px;
-    }
-
-    .calendar__pagination {
-        gap: 6px;
-        margin-top: 16px;
-    }
-
-    .calendar__page-btn {
-        width: 28px;
-        height: 28px;
-    }
-}

@@ -11,6 +11,7 @@ import { Routes, Route } from 'react-router-dom'
 import OrganisationMembers from './OrganisationMembers'
 import MembershipTicket from './MembershipTicket'
 import Actual from './Actual'
+import News from './News'
 
 const Main = () => {
     return (
@@ -26,6 +27,7 @@ const Main = () => {
                     <Route path="/Calendar" element={<Calendar/>}/>
                     <Route path="/Actual" element={<Actual/>}/>
                     <Route path="/MembershipTicket" element={<MembershipTicket/>}/>
+                    <Route path="/news" element={<News />} />
                 </Routes>
                 <Slider />
             </div>

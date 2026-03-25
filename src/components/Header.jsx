@@ -46,11 +46,11 @@ const Header = () => {
                             </div>
                         </li>
                         <li className="header__nav__membership"><Link to="/MembershipTicket" onClick={() => setIsOpen(false)}>Членство</Link></li>
-                        <li className="header__nav__actual"><Link to='Actual' onClick={() => setIsOpen(false)}>Актуальне</Link>
+                        <li className="header__nav__actual"><Link to='/news' onClick={() => setIsOpen(false)}>Актуальне</Link>
                             <div className="header__actual__dropdown">
                                 <ul>
                                     <li><Link to="/calendar" className="header__actual__dropdown__item" onClick={() => setIsOpen(false)}>Календар подій</Link></li>
-                                    <li><Link to="/actual" className="header__actual__dropdown__item" onClick={() => setIsOpen(false)}>Новини</Link></li>
+                                    <li><Link to="/news" className="header__actual__dropdown__item" onClick={() => setIsOpen(false)}>Новини</Link></li>
                                 </ul>
                             </div>
                         </li>
