@@ -51,7 +51,7 @@
 
 .login-form-header h2 {
   margin: 0;
-  font-size: 20px;
+  font-size: clamp(18px, 4vw, 24px);
   color: #333;
 }
 

@@ -1,6 +1,6 @@
 .ethic-police {
     background-color: rgba(255, 255, 255, 1);
-    padding: 2rem 4rem;
+    padding: clamp(1rem, 4vw, 2rem) clamp(1rem, 5vw, 4rem);
     margin: 0 1rem;
     border-radius: 43px;
     box-shadow: 13px 15px 24.5px 0px rgba(0, 0, 0, 0.25);
@@ -55,7 +55,7 @@
 h2 {
     font-family: Inter;
     font-weight: 700;
-    font-size: 64px;
+    font-size: clamp(32px, 5vw, 64px);
     line-height: 41px;
     letter-spacing: -4%;
 
@@ -64,7 +64,7 @@ h2 {
 h3 {
     font-family: Inter;
     font-weight: 600;
-    font-size: 28px;
+    font-size: clamp(20px, 4vw, 28px);
     margin-left: 2rem;
     margin-bottom: 1rem;
 }
@@ -73,9 +73,18 @@ p {
     font-family: Inter;
     font-weight: 300;
     font-style: Light;
-    font-size: 22px;
+    font-size: clamp(16px, 3vw, 22px);
 
     line-height: 100%;
     letter-spacing: 0%;
 
+}
+
+@media (max-width: 768px) {
+    .ethic-police__bottom {
+        flex-direction: row;
+        gap: 1.5rem;
+        align-items: center;
+        padding: 0;
+    }
 }

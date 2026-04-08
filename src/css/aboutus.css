@@ -78,7 +78,7 @@
     font-family: Inter;
     font-weight: 600;
     font-style: italic;
-    font-size: 48px;
+    font-size: clamp(48px, 4vw, 48px);
     line-height: 41px;
     letter-spacing: -4%;
 }
@@ -88,7 +88,7 @@
     font-family: "Inter";
     font-weight: 400;
     font-style: normal;
-    font-size: 24px;
+    font-size: clamp(20px, 2.5vw, 24px);
     line-height: 28px;
     letter-spacing: -4%;
 }
@@ -98,7 +98,7 @@
     font-family: "Inter";
     font-weight: 600;
     font-style: italic;
-    font-size: 48px;
+    font-size: clamp(48px, 4vw, 48px);
     line-height: 41px;
     letter-spacing: -4%;
 }
@@ -108,7 +108,7 @@
     font-family: "Inter";
     font-weight: 400;
     font-style: normal;
-    font-size: 24px;
+    font-size: clamp(20px, 2.5vw, 24px);
     line-height: 28px;
     letter-spacing: -4%;
 }
@@ -190,24 +190,8 @@
 }
 
 @media (max-width: 768px) {
-
-    .who-we-are h3,
-    .police h3,
-    .participants h3,
-    .ceo h3 {
-        font-size: 32px;
-        line-height: 1.2;
-    }
-
-    .who-we-are p,
-    .police p,
-    .participants p,
-    .ceo p {
-        font-size: 16px;
-        line-height: 1.5;
-    }
-
     .about__us {
         padding: 0 1rem;
     }
+
 }

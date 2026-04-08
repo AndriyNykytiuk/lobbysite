@@ -127,7 +127,7 @@
 }
 
 .modalblock__text h3 {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 4vw, 2rem);
     font-weight: 800;
     font-family: "Inter";
     font-style: italic;
@@ -136,7 +136,7 @@
 }
 
 .modalblock__text p {
-    font-size: 1rem;
+    font-size: clamp(0.875rem, 2vw, 1rem);
     padding: 0rem 1rem;
     line-height: 1.5;
     font-weight: 300;
@@ -224,7 +224,7 @@
         max-height: 150px;
         width: 100%;
         height: 100%;
-        padding-bottom: 100%;
+        padding-bottom: 50%;
         border-radius: 40px;
         overflow: hidden;
     }

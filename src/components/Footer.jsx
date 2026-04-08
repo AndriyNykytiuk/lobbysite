@@ -21,7 +21,7 @@ const Footer = () => {
                         <li><a href="#"><img src={insta} alt="Image" /></a></li>
                         <li><a href="#"><img src={linkedIn} alt="Image" /></a></li>
                         <li><a href="#"><img src={telegram} alt="Image" /></a></li>
-                        <li><a href="#"><img src={facebook} alt="Image" /></a></li>
+                        <li><a href="https://www.facebook.com/p/%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%B0-%D0%B0%D1%81%D0%BE%D1%86%D1%96%D0%B0%D1%86%D1%96%D1%8F-%D0%BB%D0%BE%D0%B1%D1%96%D1%8E%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F-Ukrainian-Lobbying-Association-61575236283475/"><img src={facebook} alt="Image" /></a></li>
                     </ul>
                 </div>
                 <div className="footer__adres">
